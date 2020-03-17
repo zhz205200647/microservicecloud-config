@@ -3,10 +3,6 @@ spring:
     active:
     - dev
 
-
-feign:
-  hystrix: 
-    enabled: true
     
 ---
 server:
@@ -21,7 +17,7 @@ mybatis:
 spring:
    profiles: dev
    application:
-    name: microservicecloud-comfig-dept-client
+    name: microservicecloud-config-dept-client
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.jdbc.Driver              # mysql驱动包
@@ -42,10 +38,6 @@ eureka:
     instance-id: dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址     
 
-
-feign:
-  hystrix: 
-    enabled: true
  
 info: 
   app.name: atguigu-microservicecloud-springcloudconfig01
@@ -66,7 +58,7 @@ mybatis:
 spring:
    profiles: test
    application:
-    name: microservicecloud-comfig-dept-client
+    name: microservicecloud-config-dept-client
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.jdbc.Driver              # mysql驱动包
@@ -94,6 +86,4 @@ info:
   build.version: $project.version$
 
 
-feign:
-  hystrix: 
-    enabled: true
+
